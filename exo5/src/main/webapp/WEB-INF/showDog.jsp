@@ -5,7 +5,7 @@
 
 <html>
 
- <% DogDAO dogDAO = new DogDAO(); %>  --%>
+ <% DogDAO dogDAO = new DogDAO(); %>
 
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 
     <% if (dogDAO.getAllDog().isEmpty()){ %>
     <tr>
-        <td> No Doggo found at the moment :( </td>
+        <td class="table table-dark text-center align-middle"> No Doggo found at the moment :( </td>
     </tr>
     <% } else { %>
 
@@ -50,6 +50,6 @@
         </tbody>
     </table>
 </main>
-<a href="exo5_war_exploded">retour</a>
+<a href="index.jsp" class="text-baseline">retour</a>
 </body>
 </html>
